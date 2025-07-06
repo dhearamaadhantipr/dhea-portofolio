@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhea's Portofolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/dheaabout.jpeg" />
+    <script
+      src="https://kit.fontawesome.com/57103ceec5.js"
+      crossorigin="anonymous"
+    ></script>
+     <script src="js/main.js"defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">Dhea's Portofolio</a>
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portofolio">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi! I'm <br /><span>Dhea Ramadhanti</span></h1>
+          <button class="btn">
+            <a href="assets/cvdhea.pdf" download>Download CV</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/dheaabout.jpeg" " alt="Dhea Ramadhanti" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="description">
+              Hello! I’m a fresh graduate from Universitas Tanjungpura, majoring
+              in Computer Systems, with a strong passion for learning and
+              growing in the world of technology—especially in web development.
+              During college, I explored various projects—from solo work to team
+              collaborations—including an IoT-based monitoring system enhanced
+              with AI. Outside of tech, I’ve been actively creating educational
+              content and giving talks as a freelance speaker and volunteer
+              tutor. I believe that my mix of technical skills, communication
+              strength, and organizational experience makes me well-prepared to
+              contribute meaningfully in a professional setting.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('certification')">
+                Certification & Training
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>Universitas Tanjungpura</span><br />
+                  S1-Rekayasa Sistem Komputer<br />GPA: 3.67/4.00 – Cum Laude
+                </li>
+                <!-- <li>
+                  🏫 Universitas Tanjungpura<br />
+                  <span>S1-Rekayasa Sistem Komputer</span>
+                </li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development & Database</span><br />
+                  HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React JS,
+                  Python, Flask, Git & Github, MySQL Workbench, PHP My Admin
+                </li>
+                <li>
+                  <span>Internet of Things (IoT) & Embedded Systems</span><br />
+                  Arduino, ESP32, Sensor Integration, Monitoring Systems, Blynk,
+                  and Machine Learning
+                </li>
+                <li>
+                  <span>Electronic & Electrical (DC Systems)</span><br />
+                  Basic understanding of DC electrical systems, including
+                  wiring, sensors, and relay integration.
+                </li>
+                <li>
+                  <span>Content Creation & Digital Marketing</span><br />
+                  Social Media Management, Content Planning, Content Writing,
+                  Editing (Canva & Capcut), and Digital Marketing Strategies.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Pos Indonesia – KCU 78000 Pontianak </span><br />
+                  Frontend Developer & Administrative Support (Internship)<br />
+                </li>
+                <li>
+                  <span>DNA Indonesia (Digital Marketing Agency)</span><br />
+                  Content Writer & Creator (Internship)<br />
+                </li>
+                <li>
+                  <span
+                    >Universitas Tanjungpura - Prodi Rekayasa Sistem
+                    Komputer</span
+                  ><br />
+                  Speaker on Digital Content Creation – PKM Program, Punggur
+                  Kecil, Pontianak
+                </li>
+                <li>
+                  <span
+                    >SCREEN X & XI - HIMASTER (Himpunan Mahasiswa Rekayasa
+                    Sistem Komputer)</span
+                  ><br />
+                  Public Relations Staff
+                </li>
+
+                <li>
+                  <span
+                    >BIOS - HIMASTER (Himpunan Mahasiswa Rekayasa Sistem
+                    Komputer)</span
+                  ><br />
+                  Medical and Health Division Staff
+                </li>
+                <li>
+                  <span
+                    >Academic Division - HIMASTER (Himpunan Mahasiswa Rekayasa
+                    Sistem Komputer)</span
+                  ><br />
+                  Calculus Tutor <br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="certification">
+              <ul>
+                <li>
+                  <span>Ruang Guru</span><br />
+                  Frontend Developer<br />
+                </li>
+                <li>
+                  <span>Tanjungpura University Test of English Proficiency</span
+                  ><br />
+                  Score: 497<br />
+                </li>
+                <li>
+                  <span>Englishvit TOEFL ITP-P</span><br />
+                  Score: 600<br />
+                </li>
+                <li>
+                  <span>Wegodev Course</span><br />
+                  Fullstack Developer (on going)<br />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- porto -->
+    <div id="portofolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <h3 class="project-title">
+              Broiler Monitoring & <br />Analysis Website
+            </h3>
+            <p class="project-desc">
+              This website provides a real-time dashboard to monitor
+              temperature, humidity, and ammonia levels in a broiler coop. It
+              also includes research data and testing of the Naive Bayes method
+              for automated decision-making. Built with Python (Flask), HTML,
+              CSS, and MySQL.
+            </p>
+            <div class="slider-wrapper">
+              <button class="prev" onclick="moveSlide(this, -1)">
+                &#10094;
+              </button>
+              <div class="slider">
+                <div class="slides">
+                  <img src="assets/smweb1.png" alt="SM Web 1" />
+                  <img src="assets/smweb2.png" alt="SM Web 2" />
+                  <img src="assets/smweb3.png" alt="SM Web 3" />
+                  <img src="assets/smweb4.png" alt="SM Web 4" />
+                  <img src="assets/smweb5.png" alt="SM Web 5" />
+                  <img src="assets/smweb6.png" alt="SM Web 6" />
+                </div>
+              </div>
+              <button class="next" onclick="moveSlide(this, 1)">
+                &#10095;
+              </button>
+            </div>
+          </div>
+
+          <div class="work">
+            <h3 class="project-title">
+              IoT-Broiler<br />
+              Monitoring System
+            </h3>
+            <p class="project-desc">
+              Uses DHT22 and MQ-135 sensors connected to an ESP32 to read
+              temperature, humidity, and ammonia levels. Data is sent to a
+              server and displayed on an LCD, while fans, lights, and mist
+              makers are automatically controlled based on Naive Bayes
+              classification results.
+            </p>
+            <div class="slider-wrapper">
+              <button class="prev" onclick="moveSlide(this, -1)">
+                &#10094;
+              </button>
+              <div class="slider">
+                <div class="slides">
+                  <img src="assets/smbroiler1.jpeg" alt="SM Broiler 1" />
+                  <img src="assets/smbroiler2.jpeg" alt="SM Broiler 2" />
+                  <img src="assets/smbroiler3.jpeg" alt="SM Broiler 3" />
+                  <img src="assets/smbroiler4.png" alt="SM Broiler 4" />
+                </div>
+              </div>
+              <button class="next" onclick="moveSlide(this, 1)">
+                &#10095;
+              </button>
+            </div>
+          </div>
+          <div class="work">
+            <h3 class="project-title">Blynk <br />Integration</h3>
+            <p class="project-desc">
+              This system integrates Blynk with ESP32 to enable real-time
+              monitoring and manual control of fans, lamp, & mist makers in a
+              broiler coop. Users can view temperature, humidity, and ammonia
+              levels directly from the mobile app & control each component
+              remotely.
+            </p>
+            <div class="slider-wrapper">
+              <button class="prev" onclick="moveSlide(this, -1)">
+                &#10094;
+              </button>
+              <div class="slider">
+                <div class="slides">
+                  <img src="assets/blynk.png" alt="Screenshot 1" />
+                </div>
+              </div>
+              <button class="next" onclick="moveSlide(this, 1)">
+                &#10095;
+              </button>
+            </div>
+          </div>
+          <div class="work">
+            <h3 class="project-title">
+              International Shipping Website (POS Indonesia)
+            </h3>
+            <p class="project-desc">
+              A frontend website prototype for POS Indonesia's international
+              delivery service. This platform presents service information,
+              pricing details, delivery estimations, and contact forms using
+              HTML, CSS, and JavaScript. Designed with a responsive and
+              user-friendly layout.
+            </p>
+            <div class="slider-wrapper">
+              <button class="prev" onclick="moveSlide(this, -1)">
+                &#10094;
+              </button>
+              <div class="slider">
+                <div class="slides">
+                  <img src="assets/dhea-posind.jpg" alt="Screenshot 1" />
+                  <img src="assets/pos1.png" alt="Screenshot 2" />
+                  <img src="assets/pos2.png" alt="Screenshot 3" />
+                  <img src="assets/pos3.png" alt="Screenshot 3" />
+                  <img src="assets/pos4.png" alt="Screenshot 3" />
+                  <img src="assets/pos5.png" alt="Screenshot 3" />
+                  <img src="assets/pos6.png" alt="Screenshot 3" />
+                </div>
+              </div>
+              <button class="next" onclick="moveSlide(this, 1)">
+                &#10095;
+              </button>
+            </div>
+          </div>
+          <div class="work">
+            <h3 class="project-title">Water Level Control </br>System - Team</h3>
+            <p class="project-desc">
+              This project features an automatic water level controller using
+              Arduino and an ultrasonic sensor. When the water level falls below
+              a defined point, a pump is triggered via a relay module. Built
+              collaboratively with Arduino IDE (C++) and Relay
+            </p>
+            <div class="slider-wrapper">
+              <button class="prev" onclick="moveSlide(this, -1)">
+                &#10094;
+              </button>
+              <div class="slider">
+                <div class="slides">
+                  <img src="assets/wl3.png" alt="Screenshot 3" />
+                  <img src="assets/wl1.png" alt="Screenshot 1" />
+                  <img src="assets/wl2.png" alt="Screenshot 2" />
+                </div>
+              </div>
+              <button class="next" onclick="moveSlide(this, 1)">
+                &#10095;
+              </button>
+            </div>
+          </div>
+          <div class="work">
+            <h3 class="project-title">Content <br />Creation</h3>
+            <p class="project-desc">
+              Intern as a content creator & writer for a digital agency, handling Instagram feeds & stories for internal and clients. Focused on creating educational and promotional content while maintaining brand identity & boosting engagement.
+            </p>
+            <div class="slider-wrapper">
+              <button class="prev" onclick="moveSlide(this, -1)">
+                &#10094;
+              </button>
+              <div class="slider">
+                <div class="slides">
+                  <img src="assets/digitalagency4.jpeg" alt="Screenshot 3" />
+                  <img src="assets/digitalagency.jpg" alt="Screenshot 1" />
+                  <img src="assets/digitalagency2.jpeg" alt="Screenshot 2" />
+                  <img src="assets/digitalagency3.jpeg" alt="Screenshot 3" />
+                </div>
+              </div>
+              <button class="next" onclick="moveSlide(this, 1)">
+                &#10095;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-square-envelope"></i>
+              dhearamaadhanti@gmail.com
+            </p>
+            <p><i class="fa-brands fa-whatsapp"></i> Telp/WA : 081348409178</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/dhearamaadhanti/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn" id="btnsubmit">
+                Send Message
+              </button>
+            </form>
+            <span id="success-message"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2025 Dhea Ramadhanti. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
