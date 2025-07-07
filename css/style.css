@@ -418,8 +418,26 @@ nav .fa-solid {
   .tab-contents {
     text-align: justify;
   }
+  #education ul li,
+  #experience ul li,
+  #skills ul li,
+  #certification ul li {
+    margin: 10px 0;
+    font-size: 12px;
+  }
+  .tab-contents ul li span {
+    color: #f0c040;
+    font-size: 14px;
+  }
+
   .work-list {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .project-title {
+    font-size: 15px;
+  }
+  .project-desc {
+    font-size: 13px;
   }
   .slides img {
     height: 300px;
@@ -429,12 +447,10 @@ nav .fa-solid {
   .contact-left,
   .contact-right {
     flex-basis: 100%;
+    font-size: 14px;
   }
   .contact-left p {
     margin-top: 20px;
-  }
-  .contact-left p i {
-    font-size: 18px;
   }
   .contact-right form {
     width: 100%;
